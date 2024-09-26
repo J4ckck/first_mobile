@@ -31,6 +31,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: scroll;
+    background-image:url("../back-phone.jpg");
 }
 
 header {
@@ -134,7 +135,7 @@ footer {
 }
 
 img {
-    display: block;
+    display: auto;
     margin: auto;
 }
 
@@ -158,6 +159,7 @@ img#tv {
     display: none;
 }
 
+/* tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image:url("../back-tablet.jpg");
@@ -223,5 +225,144 @@ img#tv {
 
     img#tv {
         display: none;
+    }
+}
+
+
+/* pc 992 1200 */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image:url("../back-pc.jpg");
+
+    }
+
+    #burger {
+        display: none;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*  tv*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image:url("../back-tv.jpg");
+
+    }
+
+    #burger {
+        display: none;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
     }
 }
